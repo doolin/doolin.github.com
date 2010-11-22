@@ -1,17 +1,21 @@
 
 .container {
-	margin: 30px;
+	width: 630px;
 }
 
 h1,h2,h3 {
+   font-family: "neuropol-x-light-1","neuropol-x-light-2";
 	color: #aaa;
 }
 
 h2 {
-  font-variant: small-caps;
+  
 }
 
 h3 {
-  font-family: "neuropol-x-light-1","neuropol-x-light-2";
+  font-variant: small-caps;
 }
 
+p {
+	padding-left: 2em;
+}
