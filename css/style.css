@@ -4,3 +4,8 @@
 h1 {
   color: #bbb;
 }
+
+.container {
+	width:960px;
+	margin: 30px;
+}
