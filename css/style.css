@@ -3,11 +3,15 @@
 	margin: 30px;
 }
 
-
-h1 {
-  color: #bbb;
+h1,h2,h3 {
+	color: #aaa;
 }
 
 h2 {
-   font-variant: small-caps;
+  font-variant: small-caps;
 }
+
+h3 {
+  font-family: "neuropol-x-light-1","neuropol-x-light-2";
+}
+
