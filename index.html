@@ -12,12 +12,29 @@
 
 <link rel="stylesheet" href="css/style.css" type="text/css" />
 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 <script type="text/javascript" src="http://use.typekit.com/fwp7zth.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<!-- From http://roshanbh.com.np/2008/03/expandable-collapsible-toggle-pane-jquery.html -->
+<script type="text/javascript">
+$(document).ready(function()
+{
+  //hide the all of the elements with class fulldescription
+  $(".fulldescription").hide();
+  //toggle the componenet with class msg_body
+  $(".msg_head").click(function()
+  {
+    $(this).next(".fulldescription").slideToggle(600);
+  });
+});
+</script>
+
 
 </head>
 
 <body>
+
  
 <div class="container">
 	
@@ -45,12 +62,57 @@ has been written to support, or implement a variety of
 applications and software systems.</p>
 
 
-<h2>Finite element modeling</h2>
+<h2 class="msg_head">Finite element modeling</h2>
 
+
+<div class="fulldescription">
 
 <ul>
-<li>Fracture mechanics</li>
-<li>Fracture flow</li>
+<li>Fracture mechanics: 
+  
+  Measuring the resistance or propensity of a rock to 
+  fracture has important real world application. Rock
+  is the basis for most industrial activity.  We mine it 
+  and we crush it with gross mechanical systems.  Large 
+  drills. Tons of explosives. Huge metal crushing machines.
+  
+  Everything about rock is energy inefficient. Because we 
+  as an industrial society use so much rock, even small
+  fractions of 1% energy improvement can save a lot of
+  money. 
+  
+  
+  
+  One common measure is <em>fracture toughness</em>, which 
+  can be thought of as a sort of brittleness index distinct
+  from hardness.  For example, cast iron is quite hard, but
+  brittle, while many steels are softer, but much tougher.
+  
+  In this project, Indiana limestone gathering from a quarry 
+  south of Bloomington, Indiana was cored into specimens for 
+  Modified Ring Testing.
+  
+  
+  </li>
+
+<li>Fracture flow:
+  
+  "Solid rock" is a misnomer. It doesn't exist.
+  
+  Nearly all rock is fractured at some scale, and these 
+  fractures allow fluids such as water and oil to move
+  through rock masses. 
+  
+  Because it's easier to see quasars at the edge of the 
+  universe than it is to see 1 meter beneath our feet, 
+  understanding how water moves through fractured rock
+  requires building and validating mathematical models.
+  
+  Such models help understand where groundwater is going, 
+  when it's going to get there, and what it might be carrying 
+  with it in terms of contaminants.
+  
+  </li>
 </ul>
 
 <h3>Problem space</h2>
@@ -76,13 +138,21 @@ assortment of Unix tools appropriate to the task.</p>
 <p>Output was plotted to jgraph.</p>
 
 
+</div><!--fulldescription-->
+
+
+
 <h2>Discrete element modeling</h2>
+
+<div class="fulldescription">
 
 
 <h3>Problem space</h2>
 
 
 <h3>Technology</h3>
+
+</div>
 
 
 <h2>Hub and spoke search</h2>
