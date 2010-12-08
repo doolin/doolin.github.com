@@ -1,206 +1,271 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-
-  <title>code.daviddoolin.com</title>
-
-<link rel="stylesheet" href="blueprint/screen.css" type="text/css" media="screen, projection" />  
-<link rel="stylesheet" href="blueprint/print.css" type="text/css" media="print" />  
-<!--[if IE]><link rel="stylesheet" href="blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]-->
-
-<link rel="stylesheet" href="css/style.css" type="text/css" />
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-<script type="text/javascript" src="http://use.typekit.com/fwp7zth.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
-<!-- From http://roshanbh.com.np/2008/03/expandable-collapsible-toggle-pane-jquery.html -->
-<script type="text/javascript">
-$(document).ready(function()
-{
-  //hide the all of the elements with class fulldescription
-  $(".fulldescription").hide();
-  //toggle the componenet with class msg_body
-  $(".msg_head").click(function()
-  {
-    $(this).next(".fulldescription").slideToggle(600);
-  });
-});
-</script>
-
-
-</head>
-
-<body>
-
- 
-<div class="container">
-	
-	
-<div class="span-16 last">
-	
-
-<h1>Code.DavidDoolin.com</h1>
-
-
-<p>More than 15 years of coding are 
-scattered across repositories ranging from raw RCS files 
-to the latest version of Git.
-</p>
-
-<p>Many of the repositories are corporate, 
-where the code was work for hire. Others are privately
-hosted, but there is still a lot which is publicly 
-hosted.  Links to everything publicly available will 
-be given as necessary.</p>
-
-
-<p>The story really starts with the projects. Most of this code
-has been written to support, or implement a variety of 
-applications and software systems.</p>
-
-
-<h2 class="msg_head">Finite element modeling</h2>
-
-
-<div class="fulldescription">
-
-<ul>
-<li>Fracture mechanics: 
-  
-  Measuring the resistance or propensity of a rock to 
-  fracture has important real world application. Rock
-  is the basis for most industrial activity.  We mine it 
-  and we crush it with gross mechanical systems.  Large 
-  drills. Tons of explosives. Huge metal crushing machines.
-  
-  Everything about rock is energy inefficient. Because we 
-  as an industrial society use so much rock, even small
-  fractions of 1% energy improvement can save a lot of
-  money. 
-  
-  
-  
-  One common measure is <em>fracture toughness</em>, which 
-  can be thought of as a sort of brittleness index distinct
-  from hardness.  For example, cast iron is quite hard, but
-  brittle, while many steels are softer, but much tougher.
-  
-  In this project, Indiana limestone gathering from a quarry 
-  south of Bloomington, Indiana was cored into specimens for 
-  Modified Ring Testing.
-  
-  
-  </li>
-
-<li>Fracture flow:
-  
-  "Solid rock" is a misnomer. It doesn't exist.
-  
-  Nearly all rock is fractured at some scale, and these 
-  fractures allow fluids such as water and oil to move
-  through rock masses. 
-  
-  Because it's easier to see quasars at the edge of the 
-  universe than it is to see 1 meter beneath our feet, 
-  understanding how water moves through fractured rock
-  requires building and validating mathematical models.
-  
-  Such models help understand where groundwater is going, 
-  when it's going to get there, and what it might be carrying 
-  with it in terms of contaminants.
-  
-  </li>
-</ul>
-
-<h3>Problem space</h2>
-
-
-<h3>Technology</h3>
-
-<p>HP48-SX scientific calculator: The geometry processing for quarter-ring cross-sections
-of the ring specimens was computed using an RPL program on an HP48 calculator. The 
-initial parameters were extracted on a Sun4 workstation, loaded to the calculator 
-using Kermit protocol, the geometries calculated, then downloaded into the 
-Macintosh computer running the Cornell FRANC2D code.</p>
-
-<p>Later, these analyses were ported to Abaqus running on Sparc 20 workstations.</p>
-
-<div style="float: right;" class="span-8 last">
-<img src="images/mrt_mesh_deformed.png" title="Deformed finite element mesh for modified ring test specimen." />
-</div>
-
-<p>Other tools included shell scripting with tsch, awk, sed and the usual 
-assortment of Unix tools appropriate to the task.</p>
-
-<p>Output was plotted to jgraph.</p>
-
-
-</div><!--fulldescription-->
-
-
-
-<h2>Discrete element modeling</h2>
-
-<div class="fulldescription">
-
-
-<h3>Problem space</h2>
-
-
-<h3>Technology</h3>
-
-</div>
-
-
-<h2>Hub and spoke search</h2>
-
-<h3>Problem space</h2>
-
-
-<h3>Technology</h3>
-
-
-<h2>Peer-to-peer networking</h2>
-
-
-<h3>Problem space</h2>
-
-
-<h3>Technology</h3>
-
-
-<h2>Wildfire sensors</h2>
-
-<h3>Problem space</h2>
-
-
-<h3>Technology</h3>
-
-
-<h2>Mine monitoring sensors</h2>
-
-
-<h3>Problem space</h2>
-
-
-<h3>Technology</h3>
-
-
-<h2>Parametric building generation</h2>
-
-
-<h3>Problem space</h2>
-
-
-<h3>Technology</h3>
-
-<h2>Current projects</h2>
-
-</div>
-</div> 
-
-</body>
+    <head>
+
+        <title>code.daviddoolin.com</title>
+        <link rel="stylesheet" href="blueprint/screen.css" type="text/css" media="screen, projection" />
+        <link rel="stylesheet" href="blueprint/print.css" type="text/css" media="print" />
+        <!--[if IE]><link rel="stylesheet" href="blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]-->
+
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js">
+        </script>
+        <script type="text/javascript" src="http://use.typekit.com/fwp7zth.js">
+        </script>
+        <script type="text/javascript">
+            try {
+                Typekit.load();
+            } catch(e) {
+            }
+        </script>
+        <!-- From http://roshanbh.com.np/2008/03/expandable-collapsible-toggle-pane-jquery.html -->
+        <script type="text/javascript">
+            $(document).ready( function() {
+
+                //hide the all of the elements with class fulldescription
+                $(".fulldescription").hide();
+
+                //toggle the componenet with class msg_body
+                $(".msg_head").click( function() {
+                    $(this).next(".fulldescription").slideToggle(600);
+                });
+            });
+        </script>
+    </head>
+    <body>
+
+        <div class="container">
+
+            <div class="span-16 last">
+
+                <h1>Code.DavidDoolin.com</h1>
+                <p>
+                    More than 15 years of coding are
+                    scattered across repositories ranging from raw RCS files
+                    to the latest version of Git.
+                </p>
+                <p>
+                    Many of the repositories are corporate,
+                    where the code was work for hire. Others are privately
+                    hosted, but there is still a lot which is publicly
+                    hosted.  Links to everything publicly available will
+                    be given as necessary.
+                </p>
+                <p>
+                    The story really starts with the projects. Most of this code
+                    has been written to support, or implement a variety of
+                    applications and software systems.
+                </p>
+                
+                <section id="fem">
+                <h2 class="msg_head">Finite element modeling</h2>
+                <div class="fulldescription">
+
+                    <p class="abstract">Summary: 
+                        <span class="who-benefited">Who benefited?</span>
+                        <span class="why-important">Why was this work important?</span>
+                        <span class="what-results">What were the results?</span>
+                    </p>
+
+                    <ul>
+                        <li>
+                            Fracture mechanics:
+
+                            <p>
+                                Measuring the resistance or propensity of a rock to
+                                fracture has important real world application. Rock
+                                is the basis for most industrial activity.  We mine it
+                                and we crush it with gross mechanical systems.  Large
+                                drills. Tons of explosives. Huge metal crushing machines.
+                            </p>
+                            <p>
+                                Everything about rock is energy inefficient. Because we
+                                as an industrial society use so much rock, even small
+                                fractions of 1% energy improvement can save a lot of
+                                money.
+                            </p>
+                            <p>
+                                One common measure is <em>fracture toughness</em>, which
+                                can be thought of as a sort of brittleness index distinct
+                                from hardness.  For example, cast iron is quite hard, but
+                                brittle, while many steels are softer, but much tougher.
+                            </p>
+                            <p>
+                                In this project, Indiana limestone gathering from a quarry
+                                south of Bloomington, Indiana was cored into specimens for
+                                Modified Ring Testing.
+                            </p>
+                        </li>
+                        <li>
+                            Fracture flow:
+
+                            <p>
+                                "Solid rock" is a misnomer. It doesn't exist.
+                            </p>
+                            <p>
+                                Nearly all rock is fractured at some scale, and these
+                                fractures allow fluids such as water and oil to move
+                                through rock masses.
+                            </p>
+                            <p>
+                                Because it's easier to see quasars at the edge of the
+                                universe than it is to see 1 meter beneath our feet,
+                                understanding how water moves through fractured rock
+                                requires building and validating mathematical models.
+                            </p>
+                            <p>
+                                Such models help understand where groundwater is going,
+                                when it's going to get there, and what it might be carrying
+                                with it in terms of contaminants.
+                            </p>
+                        </li>
+                    </ul>
+                    <h3>Problem space</h2>
+
+                    <h3>Technology</h3>
+                    <p>
+                        HP48-SX scientific calculator: The geometry processing for quarter-ring cross-sections
+                        of the ring specimens was computed using an RPL program on an HP48 calculator. The
+                        initial parameters were extracted on a Sun4 workstation, loaded to the calculator
+                        using Kermit protocol, the geometries calculated, then downloaded into the
+                        Macintosh computer running the Cornell FRANC2D code.
+                    </p>
+                    <p>
+                        Later, these analyses were ported to Abaqus running on Sparc 20 workstations.
+                    </p>
+                    <div style="float: right;" class="span-8 last">
+                        <img src="images/mrt_mesh_deformed.png" title="Deformed finite element mesh for modified ring test specimen." />
+                    </div>
+                    <p>
+                        Other tools included shell scripting with tsch, awk, sed and the usual
+                        assortment of Unix tools appropriate to the task.
+                    </p>
+                    <p>
+                        Output was plotted to jgraph.
+                    </p>
+                </div><!--fulldescription-->
+                </section>
+
+                <section id="discrete-element-modeling">
+                    <h2 class="msg_head">Discrete element modeling</h2>
+                    <div class="fulldescription">
+
+                        <p class="abstract">
+                            <span class="who-benefited">Who benefited?</span>
+                            <span class="why-important">Why was this work important?</span>
+                            <span class="what-results">What were the results?</span>
+                        </p>
+                        <h3>Problem space</h2>
+
+                        <h3>Technology</h3>
+                        <p>
+                            C/C++, Win32 API, Unit testing, Gnuplot, LaTeX, BLAS/LAPACK, Matlab, Octave, Bash, Cygwin
+                        </p>
+                    </div>
+                </section>
+                
+                
+                <!------------     -->
+                <section id="hub-spoke-search">
+                <h2 class="msg_head">Hub and spoke search</h2>
+                <div class="fulldescription">
+
+                    <p class="abstract">Summary: 
+                        <span class="who-benefited">Who benefited?</span>
+                        <span class="why-important">Why was this work important?</span>
+                        <span class="what-results">What were the results?</span>
+                    </p>
+                    <h3>Problem space</h2>
+
+                    <h3>Technology</h3>
+                    <p>
+                        Win32, C/C++, Java, HTML, CSS, Linux, Apache, Tomcat, Jetty, Cygwin.
+                    </p>
+                </div>
+                </section>
+                
+                
+                <!------------     -->
+                <section id="peer-to-peer">
+                <h2 class="msg_head">Peer-to-peer networking</h2>
+                <div class="fulldescription">
+
+                    <p class="abstract">
+                        <span class="who-benefited">Who benefited?</span>
+                        <span class="why-important">Why was this work important?</span>
+                        <span class="what-results">What were the results?</span>
+                    </p>
+                    <h3>Problem space</h2>
+
+                    <h3>Technology</h3>
+                </div>
+                </section>
+                
+                
+                <!------------     -->
+                <section id="wildfire-sensors">
+                <h2 class="msg_head">Wildfire sensors</h2>
+                <div class="fulldescription">
+
+                    <p class="abstract">
+                        <span class="who-benefited">Who benefited?</span>
+                        <span class="why-important">Why was this work important?</span>
+                        <span class="what-results">What were the results?</span>
+                    </p>
+                    <h3>Problem space</h2>
+
+                    <h3 class="technology">Technology</h3>
+                    <p>
+                        Nesc, C/C++, ARM, Wireless sensors, HTML, CSS, MySQL, PHP, Linux, Google Maps, Tablet computers, Cygwin, GPS
+                    </p>
+                </div>
+                </section>
+                
+                <!------------     -->
+                <section id="mine-monitoring">
+                <h2 class="msg_head">Mine monitoring sensors</h2>
+                <div class="fulldescription">
+
+                    <p class="abstract">
+                        <span class="who-benefited">Who benefited?</span>
+                        <span class="why-important">Why was this work important?</span>
+                        <span class="what-results">What were the results?</span>
+                    </p>
+                    <h3>Problem space</h2>
+
+                    <h3>Technology</h3>
+                    <p>
+                        Nesc, C/C++, ARM, Wireless sensors, HTML, CSS, MySQL, PHP, Linux, Google Maps, Tablet computers, Cygwin
+                    </p>
+                </div>
+                </section>
+                
+                
+                <!------------     -->
+                <section id="parametric-building-representation">
+                <h2 class="msg_head">Parametric building generation</h2>
+                <div class="fulldescription">
+
+                    <p class="abstract">Summary: 
+                        <span class="who-benefited">Who benefited?</span>
+                        <span class="why-important">Why was this work important?</span>
+                        <span class="what-results">What were the results?</span>
+                    </p>
+                    <h3>Problem space</h2>
+
+                    <h3>Technology</h3>
+                    <p>
+                        C/C++, Lua, OpenFlight, Gamebryo, Qt.
+                    </p>
+                </div>
+                </section>
+                
+                <!------------     -->
+                <h2 class="msg_head">Current projects</h2>
+            </div>
+        </div>
+    </body>
 </html>
