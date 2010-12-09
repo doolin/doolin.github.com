@@ -1,4 +1,9 @@
 
+body {
+  font-size: 12pt;
+}
+
+
 .container {
 	width: 630px;
 }
@@ -9,32 +14,40 @@ h1,h2,h3 {
 }
 
 h2 {
-  
+  text-decoration: underline;
+  cursor: pointer;
+  cursor: hand;
 }
 
 h3 {
   font-variant: small-caps;
 }
 
+h3.technology {
+  
+}
+
+div.technology {
+  color: #000;
+}
+
 p {
 	padding-left: 2em;
 }
 
-body {
-  font-size: 12pt;
-}
 
-/*
+
+
 span.who-benefited {
-  color: #205791;
+  color: #000;
 }
 
 
 span.why-important {
-  color: #514721;
+  color: #000;
 }
 
 span.what-results {
-  color: #8A1F11;
+  color: #000;
 }
-*/
+

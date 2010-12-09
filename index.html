@@ -59,214 +59,286 @@
                     has been written to support, or implement a variety of
                     applications and software systems.
                 </p>
-                
-                <p>In the following, each project will be summarized, and the 
-                  technology explained in detail.
+                <p>
+                    In the following, each project will be summarized, and the
+                    technology explained in detail.
                 </p>
-                  
                 <section id="fem">
-                <h2 class="msg_head">Finite element modeling</h2>
-                <div class="fulldescription">
-
-                    <p class="abstract">Summary: 
-                        <span class="who-benefited">Who benefited?</span>
-                        <span class="why-important">Why was this work important?</span>
-                        <span class="what-results">What were the results?</span>
-                    </p>
-
-                    <ul>
-                        <li>
-                            Fracture mechanics:
-
-                            <p>
-                                Measuring the resistance or propensity of a rock to
-                                fracture has important real world application. Rock
-                                is the basis for most industrial activity.  We mine it
-                                and we crush it with gross mechanical systems.  Large
-                                drills. Tons of explosives. Huge metal crushing machines.
-                            </p>
-                            <p>
-                                Everything about rock is energy inefficient. Because we
-                                as an industrial society use so much rock, even small
-                                fractions of 1% energy improvement can save a lot of
-                                money.
-                            </p>
-                            <p>
-                                One common measure is <em>fracture toughness</em>, which
-                                can be thought of as a sort of brittleness index distinct
-                                from hardness.  For example, cast iron is quite hard, but
-                                brittle, while many steels are softer, but much tougher.
-                            </p>
-                            <p>
-                                In this project, Indiana limestone gathering from a quarry
-                                south of Bloomington, Indiana was cored into specimens for
-                                Modified Ring Testing.
-                            </p>
-                        </li>
-                        <li>
-                            Fracture flow:
-
-                            <p>
-                                "Solid rock" is a misnomer. It doesn't exist.
-                            </p>
-                            <p>
-                                Nearly all rock is fractured at some scale, and these
-                                fractures allow fluids such as water and oil to move
-                                through rock masses.
-                            </p>
-                            <p>
-                                Because it's easier to see quasars at the edge of the
-                                universe than it is to see 1 meter beneath our feet,
-                                understanding how water moves through fractured rock
-                                requires building and validating mathematical models.
-                            </p>
-                            <p>
-                                Such models help understand where groundwater is going,
-                                when it's going to get there, and what it might be carrying
-                                with it in terms of contaminants.
-                            </p>
-                        </li>
-                    </ul>
-                    <h3>Problem space</h2>
-
-                    <h3>Technology</h3>
-                    <p>
-                        HP48-SX scientific calculator: The geometry processing for quarter-ring cross-sections
-                        of the ring specimens was computed using an RPL program on an HP48 calculator. The
-                        initial parameters were extracted on a Sun4 workstation, loaded to the calculator
-                        using Kermit protocol, the geometries calculated, then downloaded into the
-                        Macintosh computer running the Cornell FRANC2D code.
-                    </p>
-                    <p>
-                        Later, these analyses were ported to Abaqus running on Sparc 20 workstations.
-                    </p>
-                    <div style="float: right;" class="span-8 last">
-                        <img src="images/mrt_mesh_deformed.png" title="Deformed finite element mesh for modified ring test specimen." />
-                    </div>
-                    <p>
-                        Other tools included shell scripting with tsch, awk, sed and the usual
-                        assortment of Unix tools appropriate to the task.
-                    </p>
-                    <p>
-                        Output was plotted to jgraph.
-                    </p>
-                </div><!--fulldescription-->
-                </section>
-
-                <section id="discrete-element-modeling">
-                    <h2 class="msg_head">Discrete element modeling</h2>
+                    <h2 class="msg_head">Fracture toughness testing</h2>
                     <div class="fulldescription">
 
-                        <p class="abstract">Summary: 
+                        <p class="abstract">
+                            <strong>Summary:</strong>
+                            <span class="who-benefited">As part of an ongoing environmental
+                                study at Oak Ridge National Laboratory, </span>
+                            <span class="why-important">limestone and sandstone specimens
+                                with known fracture toughness were
+                                fractured using the Modified Ring Test.</span>
+                            <span class="what-results">Testing results indicated the Modified
+                                Ring Test measured toughness appropriately and could be
+                                used on rocks outcropping on the Oak Ridge Reservation.</span>
+                        </p>
+                        <ul>
+                            <li>
+                                Fracture mechanics:
+
+                                <p>
+                                    Measuring the resistance or propensity of a rock to
+                                    fracture has important real world application. Rock
+                                    is the basis for most industrial activity.  We mine it
+                                    and we crush it with gross mechanical systems.  Large
+                                    drills. Tons of explosives. Huge metal crushing machines.
+                                </p>
+                                <p>
+                                    Everything about rock is energy inefficient. Because we
+                                    as an industrial society use so much rock, even small
+                                    fractions of 1% energy improvement can save a lot of
+                                    money.
+                                </p>
+                                <p>
+                                    One common measure is <em>fracture toughness</em>, which
+                                    can be thought of as a sort of brittleness index distinct
+                                    from hardness.  For example, cast iron is quite hard, but
+                                    brittle, while many steels are softer, but much tougher.
+                                </p>
+                                <p>
+                                    In this project, Indiana limestone gathering from a quarry
+                                    south of Bloomington, Indiana was cored into specimens for
+                                    Modified Ring Testing.
+                                </p>
+                            </li>
+                        </ul>
+                        <h3>Problem space</h3>
+                        <div style="float: right;" class="span-8 last">
+                            <img src="images/mrt_mesh_deformed.png" title="Deformed finite element mesh for modified ring test specimen." />
+                        </div>
+                        <h3 class="technology">Technology</h3>
+                        <div class="technology">
+                        <p>
+                            HP48-SX scientific calculator: The geometry processing for quarter-ring cross-sections
+                            of the ring specimens was computed using an RPL program on an HP48 calculator. The
+                            initial parameters were extracted on a Sun4 workstation, loaded to the calculator
+                            using Kermit protocol, the geometries calculated, then downloaded into the
+                            Macintosh computer running the Cornell FRANC2D code.
+                        </p>
+                        <p>
+                            Later, these analyses were ported to
+                            <a href="http://www.simulia.com/products/abaqus_fea.html">Abaqus</a>
+                            running on <a href="http://en.wikipedia.org/wiki/SPARCstation_20">Sparc 20 workstations</a>.
+                        </p>
+                        <p>
+                            Other tools included shell scripting with tsch, awk, sed and the usual
+                            assortment of Unix tools appropriate to the task.
+                        </p>
+                        <p>
+                            Output was plotted to jgraph.
+                        </p>
+                        </div>
+                    </div><!--fulldescription-->
+                </section>
+                
+                
+                <section id="fracture-flow">
+                    <h2 class="msg_head">Fracture flow modeling</h2>
+                    <div class="fulldescription">
+
+                        <p class="abstract">
+                            <strong>Summary:</strong>
                             <span class="who-benefited">Who benefited?</span>
                             <span class="why-important">Why was this work important?</span>
                             <span class="what-results">What were the results?</span>
                         </p>
-                        <h3>Problem space</h2>
+                        <ul>
+                            <li>
+                                Fracture flow:
 
-                        <h3>Technology</h3>
-                        <p>
-                            C/C++, Win32 API, Unit testing, Gnuplot, LaTeX, BLAS/LAPACK, Matlab, Octave, Bash, Cygwin
-                        </p>
+                                <p>
+                                    "Solid rock" is a misnomer. It doesn't exist.
+                                </p>
+                                <p>
+                                    Nearly all rock is fractured at some scale, and these
+                                    fractures allow fluids such as water and oil to move
+                                    through rock masses.
+                                </p>
+                                <p>
+                                    Because it's easier to see quasars at the edge of the
+                                    universe than it is to see 1 meter beneath our feet,
+                                    understanding how water moves through fractured rock
+                                    requires building and validating mathematical models.
+                                </p>
+                                <p>
+                                    Such models help understand where groundwater is going,
+                                    when it's going to get there, and what it might be carrying
+                                    with it in terms of contaminants.
+                                </p>
+                            </li>
+                        </ul>
+                        <h3>Problem space</h3>
+                        <h3 class="technology">Technology</h3>
+                        <div class="technology">
+                            <p>
+                                C, Matlab.
+                            </p>
+                        </div>
                     </div>
                 </section>
                 
+                <section id="f2j">
+                  <h2 class="msg_head">Compiling Fortran to Java</h2>
+                    <div class="fulldescription">
+
+                        <p class="abstract">
+                            <strong>Summary:</strong>
+                            <span class="who-benefited">Who benefited?</span>
+                            <span class="why-important">Why was this work important?</span>
+                            <span class="what-results">What were the results?</span>
+                        </p>
+                        <h3>Problem space</h3>
+                        <h3 class="technology">Technology</h3>
+                        <div class="technology">
+                            <p>
+                                C, Flex, Bison.
+                            </p>
+                        </div>
+                    </div>
+                </section>
                 
+                <section id="discrete-element-modeling">
+                    <h2 class="msg_head">Discrete element modeling</h2>
+                    <div class="fulldescription">
+
+                        <p class="abstract">
+                            <strong>Summary:</strong>
+                            <span class="who-benefited">Who benefited?</span>
+                            <span class="why-important">Why was this work important?</span>
+                            <span class="what-results">What were the results?</span>
+                        </p>
+                        <h3>Problem space</h3>
+                        <h3 class="technology">Technology</h3>
+                        <div class="technology">
+                            <p>
+                                C/C++, Win32 API, Unit testing, Gnuplot, LaTeX, BLAS/LAPACK, Matlab, Octave, Bash, Cygwin
+                            </p>
+                        </div>
+                    </div>
+                </section>
                 <!------------     -->
                 <section id="hub-spoke-search">
-                <h2 class="msg_head">Hub and spoke search</h2>
-                <div class="fulldescription">
+                    <h2 class="msg_head">Hub and spoke search</h2>
+                    <div class="fulldescription">
 
-                    <p class="abstract">Summary: 
-                        <span class="who-benefited">Who benefited?</span>
-                        <span class="why-important">Why was this work important?</span>
-                        <span class="what-results">What were the results?</span>
-                    </p>
-                    <h3>Problem space</h2>
-
-                    <h3>Technology</h3>
-                    <p>
-                        Win32, C/C++, Java, HTML, CSS, Linux, Apache, Tomcat, Jetty, Cygwin.
-                    </p>
-                </div>
+                        <p class="abstract">
+                            <strong>Summary:</strong>
+                            <span class="who-benefited">Targeted search benefits users by
+                                providing results more relevant to their query.</span>
+                            <span class="why-important">Grouping content providers by
+                                topic helps increase relevancy.</span>
+                            <span class="what-results">In 2001, Infrasearch-based JXTA
+                                technology returned search results
+                                from a major news source database timestamped at 57 seconds
+                                after database insertion.</span>
+                        </p>
+                        <h3>Problem space</h3>
+                        <h3 class="technology">Technology</h3>
+                        <div class="technology">
+                            <p>
+                                Win32, C/C++, Java, HTML, CSS, Linux, Apache, Tomcat, Jetty, Cygwin.
+                            </p>
+                        </div>
+                    </div>
                 </section>
-                
-                
                 <!------------     -->
                 <section id="peer-to-peer">
-                <h2 class="msg_head">Peer-to-peer networking</h2>
-                <div class="fulldescription">
+                    <h2 class="msg_head">Peer-to-peer networking</h2>
+                    <div class="fulldescription">
 
-                    <p class="abstract">Summary: 
-                        <span class="who-benefited">Who benefited?</span>
-                        <span class="why-important">Why was this work important?</span>
-                        <span class="what-results">What were the results?</span>
-                    </p>
-                    <h3>Problem space</h2>
-
-                    <h3>Technology</h3>
-                </div>
+                        <p class="abstract">
+                            <strong>Summary:</strong>
+                            <span class="who-benefited">Who benefited?</span>
+                            <span class="why-important">Why was this work important?</span>
+                            <span class="what-results">What were the results?</span>
+                        </p>
+                        <h3>Problem space</h3>
+                        <h3 class="technology">Technology</h3>
+                        <div class="technology">
+                          <p>
+                            Java, C, Win32.
+                            </p>
+                        </div>
+                    </div>
                 </section>
-                
-                
                 <!------------     -->
                 <section id="wildfire-sensors">
-                <h2 class="msg_head">Wildfire sensors</h2>
-                <div class="fulldescription">
+                    <h2 class="msg_head">Wildfire sensors</h2>
+                    <div class="fulldescription">
 
-                    <p class="abstract">Summary: 
-                        <span class="who-benefited">Who benefited?</span>
-                        <span class="why-important">Why was this work important?</span>
-                        <span class="what-results">What were the results?</span>
-                    </p>
-                    <h3>Problem space</h2>
-
-                    <h3 class="technology">Technology</h3>
-                    <p>
-                        Nesc, C/C++, ARM, Wireless sensors, HTML, CSS, MySQL, PHP, Linux, Google Maps, Tablet computers, Cygwin, GPS
-                    </p>
-                </div>
+                        <p class="abstract">
+                            <strong>Summary:</strong>
+                            <span class="who-benefited">Who benefited?</span>
+                            <span class="why-important">Why was this work important?</span>
+                            <span class="what-results">What were the results?</span>
+                        </p>
+                        <h3>Problem space</h3>
+                        <h3 class="technology">Technology</h3>
+                        <div class="technology">
+                        <p>
+                            Nesc, C/C++, ARM, Wireless sensors, HTML, CSS, MySQL, PHP, Linux, Google Maps, Tablet computers, Cygwin, GPS
+                        </p>
+                        </div>
+                    </div>
                 </section>
-                
                 <!------------     -->
                 <section id="mine-monitoring">
-                <h2 class="msg_head">Mine monitoring sensors</h2>
-                <div class="fulldescription">
+                    <h2 class="msg_head">Mine monitoring sensors</h2>
+                    <div class="fulldescription">
 
-                    <p class="abstract">Summary: 
-                        <span class="who-benefited">Who benefited?</span>
-                        <span class="why-important">Why was this work important?</span>
-                        <span class="what-results">What were the results?</span>
-                    </p>
-                    <h3>Problem space</h2>
-
-                    <h3>Technology</h3>
-                    <p>
-                        Nesc, C/C++, ARM, Wireless sensors, HTML, CSS, MySQL, PHP, Linux, Google Maps, Tablet computers, Cygwin
-                    </p>
-                </div>
+                        <p class="abstract">
+                            <strong>Summary:</strong>
+                            <span class="who-benefited">Sensors can help miners evaluate and monitor
+                              working conditions underground, leading to a safer mine.</span>
+                            <span class="why-important">Since wireless sensors are line-of-site
+                              constrained, establishing a baseline, proof-of-concept implementation
+                              is necessary before committing to industrial production.</span>
+                            <span class="what-results">We found that wireless sensors work quite
+                              well for monitoring temperature, barometric pressure and humidity
+                              in Black Diamond Mine, when appropriate care is taken during 
+                              installation to establish line-of-site communication.</span>
+                        </p>
+                        <h3>Problem space</h3>
+                        <h3 class="technology">Technology</h3>
+                        <div class="technology">
+                        <p>
+                            Nesc, C/C++, ARM, Wireless sensors, HTML, CSS, MySQL, PHP, Linux, Google Maps, Tablet computers, Cygwin
+                        </p>
+                        <p>
+                            Building a sensor mote network in a mine required distributing motes on a line of
+                            site network through the mine.
+                        </p>
+                        </div>
+                    </div>
                 </section>
-                
-                
                 <!------------     -->
                 <section id="parametric-building-representation">
-                <h2 class="msg_head">Parametric building generation</h2>
-                <div class="fulldescription">
+                    <h2 class="msg_head">Parametric building generation</h2>
+                    <div class="fulldescription">
 
-                    <p class="abstract">Summary: 
-                        <span class="who-benefited">Who benefited?</span>
-                        <span class="why-important">Why was this work important?</span>
-                        <span class="what-results">What were the results?</span>
-                    </p>
-                    <h3>Problem space</h2>
-
-                    <h3>Technology</h3>
-                    <p>
-                        C/C++, Lua, OpenFlight, Gamebryo, Qt.
-                    </p>
-                </div>
+                        <p class="abstract">
+                            <strong>Summary:</strong>
+                            <span class="who-benefited">Who benefited?</span>
+                            <span class="why-important">Why was this work important?</span>
+                            <span class="what-results">The Real World Building Editor went on to
+                                form the basis of Total Immersion's Object Builder, now based
+                                on Google's SketchUp product.</span>
+                        </p>
+                        <h3>Problem space</h3>
+                        <h3 class="technology">Technology</h3>
+                        <div class="technology">
+                        <p>
+                            C/C++, Lua, OpenFlight, Gamebryo, Qt.
+                        </p>
+                        </div>
+                    </div>
                 </section>
-                
                 <!------------     -->
                 <h2 class="msg_head">Current projects</h2>
             </div>
