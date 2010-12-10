@@ -17,7 +17,7 @@
         </script>
         <script type="text/javascript">
             try {
-                Typekit.load();
+            Typekit.load();
             } catch(e) {
             }
         </script>
@@ -25,13 +25,14 @@
         <script type="text/javascript">
             $(document).ready( function() {
 
-                //hide the all of the elements with class fulldescription
-                $(".fulldescription").hide();
+            //hide the all of the elements with class fulldescription
+            $(".fulldescription").hide();
 
-                //toggle the componenet with class msg_body
-                $(".msg_head").click( function() {
-                    $(this).next(".fulldescription").slideToggle(600);
-                });
+            //toggle the componenet with class msg_body
+            $(".msg_head").click( function() {
+            $(this).next(".fulldescription").slideToggle(600);
+            });
+
             });
         </script>
     </head>
@@ -78,66 +79,58 @@
                                 Ring Test measured toughness appropriately and could be
                                 used on rocks outcropping on the Oak Ridge Reservation.</span>
                         </p>
-                        <ul>
-                            <li>
-                                Fracture mechanics:
-
-                                <p>
-                                    Measuring the resistance or propensity of a rock to
-                                    fracture has important real world application. Rock
-                                    is the basis for most industrial activity.  We mine it
-                                    and we crush it with gross mechanical systems.  Large
-                                    drills. Tons of explosives. Huge metal crushing machines.
-                                </p>
-                                <p>
-                                    Everything about rock is energy inefficient. Because we
-                                    as an industrial society use so much rock, even small
-                                    fractions of 1% energy improvement can save a lot of
-                                    money.
-                                </p>
-                                <p>
-                                    One common measure is <em>fracture toughness</em>, which
-                                    can be thought of as a sort of brittleness index distinct
-                                    from hardness.  For example, cast iron is quite hard, but
-                                    brittle, while many steels are softer, but much tougher.
-                                </p>
-                                <p>
-                                    In this project, Indiana limestone gathering from a quarry
-                                    south of Bloomington, Indiana was cored into specimens for
-                                    Modified Ring Testing.
-                                </p>
-                            </li>
-                        </ul>
                         <h3>Problem space</h3>
+                        <p>
+                            Measuring the resistance or propensity of a rock to
+                            fracture has important real world application. Rock
+                            is the basis for most industrial activity.  We mine it
+                            and we crush it with gross mechanical systems.  Large
+                            drills. Tons of explosives. Huge metal crushing machines.
+                        </p>
+                        <p>
+                            Everything about rock is energy inefficient. Because we
+                            as an industrial society use so much rock, even small
+                            fractions of 1% energy improvement can save a lot of
+                            money.
+                        </p>
+                        <p>
+                            One common measure is <em>fracture toughness</em>, which
+                            can be thought of as a sort of brittleness index distinct
+                            from hardness.  For example, cast iron is quite hard, but
+                            brittle, while many steels are softer, but much tougher.
+                        </p>
+                        <p>
+                            In this project, Indiana limestone gathering from a quarry
+                            south of Bloomington, Indiana was cored into specimens for
+                            Modified Ring Testing.
+                        </p>
                         <div style="float: right;" class="span-8 last">
                             <img src="images/mrt_mesh_deformed.png" title="Deformed finite element mesh for modified ring test specimen." />
                         </div>
                         <h3 class="technology">Technology</h3>
                         <div class="technology">
-                        <p>
-                            HP48-SX scientific calculator: The geometry processing for quarter-ring cross-sections
-                            of the ring specimens was computed using an RPL program on an HP48 calculator. The
-                            initial parameters were extracted on a Sun4 workstation, loaded to the calculator
-                            using Kermit protocol, the geometries calculated, then downloaded into the
-                            Macintosh computer running the Cornell FRANC2D code.
-                        </p>
-                        <p>
-                            Later, these analyses were ported to
-                            <a href="http://www.simulia.com/products/abaqus_fea.html">Abaqus</a>
-                            running on <a href="http://en.wikipedia.org/wiki/SPARCstation_20">Sparc 20 workstations</a>.
-                        </p>
-                        <p>
-                            Other tools included shell scripting with tsch, awk, sed and the usual
-                            assortment of Unix tools appropriate to the task.
-                        </p>
-                        <p>
-                            Output was plotted to jgraph.
-                        </p>
+                            <p>
+                                The geometry processing for quarter-ring cross-sections
+                                of the ring specimens was computed using an RPL program on an HP48-SX scientific calculator. The
+                                initial parameters were extracted on a Sun4 workstation, loaded to the calculator
+                                using Kermit protocol, the geometries calculated, then downloaded into the
+                                Macintosh computer running the Cornell FRANC2D code.
+                            </p>
+                            <p>
+                                Later, these analyses were ported to
+                                <a href="http://www.simulia.com/products/abaqus_fea.html">Abaqus</a>
+                                running on <a href="http://en.wikipedia.org/wiki/SPARCstation_20">Sparc 20 workstations</a>.
+                            </p>
+                            <p>
+                                Other tools included shell scripting with tsch, awk, sed and the usual
+                                assortment of Unix tools appropriate to the task.
+                            </p>
+                            <p>
+                                Output was plotted to jgraph.
+                            </p>
                         </div>
                     </div><!--fulldescription-->
                 </section>
-                
-                
                 <section id="fracture-flow">
                     <h2 class="msg_head">Fracture flow modeling</h2>
                     <div class="fulldescription">
@@ -182,9 +175,8 @@
                         </div>
                     </div>
                 </section>
-                
                 <section id="f2j">
-                  <h2 class="msg_head">Compiling Fortran to Java</h2>
+                    <h2 class="msg_head">Compiling Fortran to Java</h2>
                     <div class="fulldescription">
 
                         <p class="abstract">
@@ -202,7 +194,6 @@
                         </div>
                     </div>
                 </section>
-                
                 <section id="discrete-element-modeling">
                     <h2 class="msg_head">Discrete element modeling</h2>
                     <div class="fulldescription">
@@ -261,8 +252,8 @@
                         <h3>Problem space</h3>
                         <h3 class="technology">Technology</h3>
                         <div class="technology">
-                          <p>
-                            Java, C, Win32.
+                            <p>
+                                Java, C, Win32.
                             </p>
                         </div>
                     </div>
@@ -281,9 +272,9 @@
                         <h3>Problem space</h3>
                         <h3 class="technology">Technology</h3>
                         <div class="technology">
-                        <p>
-                            Nesc, C/C++, ARM, Wireless sensors, HTML, CSS, MySQL, PHP, Linux, Google Maps, Tablet computers, Cygwin, GPS
-                        </p>
+                            <p>
+                                Nesc, C/C++, ARM, Wireless sensors, HTML, CSS, MySQL, PHP, Linux, Google Maps, Tablet computers, Cygwin, GPS
+                            </p>
                         </div>
                     </div>
                 </section>
@@ -295,25 +286,34 @@
                         <p class="abstract">
                             <strong>Summary:</strong>
                             <span class="who-benefited">Sensors can help miners evaluate and monitor
-                              working conditions underground, leading to a safer mine.</span>
+                                working conditions underground, leading to a safer mine.</span>
                             <span class="why-important">Since wireless sensors are line-of-site
-                              constrained, establishing a baseline, proof-of-concept implementation
-                              is necessary before committing to industrial production.</span>
+                                constrained, establishing a baseline, proof-of-concept implementation
+                                is necessary before committing to industrial production.</span>
                             <span class="what-results">We found that wireless sensors work quite
-                              well for monitoring temperature, barometric pressure and humidity
-                              in Black Diamond Mine, when appropriate care is taken during 
-                              installation to establish line-of-site communication.</span>
+                                well for monitoring temperature, barometric pressure and humidity
+                                in Black Diamond Mine, when appropriate care is taken during
+                                installation to establish line-of-site communication.</span>
                         </p>
                         <h3>Problem space</h3>
+                        <p>
+                            Working in an underground mine requires a number of skills beyond
+                            software development. For example, everyone on the project was
+                            required to undergo mine safety briefing. Parts of the mine suffer
+                            from spalling, with occasional rock falls significant enough to
+                            threaten safety.  Mote installation required using a number of
+                            power tools to both fabricate mounts and attached the mounted
+                            mote to mine walls.
+                        </p>
                         <h3 class="technology">Technology</h3>
                         <div class="technology">
-                        <p>
-                            Nesc, C/C++, ARM, Wireless sensors, HTML, CSS, MySQL, PHP, Linux, Google Maps, Tablet computers, Cygwin
-                        </p>
-                        <p>
-                            Building a sensor mote network in a mine required distributing motes on a line of
-                            site network through the mine.
-                        </p>
+                            <p>
+                                Building a sensor mote network in a mine required distributing motes on a line of
+                                site network through the mine.
+                            </p>
+                            <p>
+                                Nesc, C/C++, ARM, Wireless sensors, HTML, CSS, MySQL, PHP, Linux, Google Maps, Tablet computers, Cygwin
+                            </p>
                         </div>
                     </div>
                 </section>
@@ -324,18 +324,47 @@
 
                         <p class="abstract">
                             <strong>Summary:</strong>
-                            <span class="who-benefited">Who benefited?</span>
-                            <span class="why-important">Why was this work important?</span>
+                            <span class="who-benefited">Users of simulation require
+                                realistic objects for training.</span>
+                            <span class="why-important">Rapidly populating a simulation environment
+                                with objects modeled from the real world helps planning agencies
+                                respond quickly and accurately.</span>
                             <span class="what-results">The Real World Building Editor went on to
                                 form the basis of Total Immersion's Object Builder, now based
                                 on Google's SketchUp product.</span>
                         </p>
                         <h3>Problem space</h3>
-                        <h3 class="technology">Technology</h3>
-                        <div class="technology">
                         <p>
-                            C/C++, Lua, OpenFlight, Gamebryo, Qt.
+                            Total Immersion brought me on in March 2006 to help define a
+                            way to simulate real buildings in their RealWorld platform.
+                            Starting from general guidelines, I scoped out requirements,
+                            then designed and built the RealWorld Building Editor. The
+                            goal of this application was to allow an untrained user to
+                            create a model of a real building for use in a simulation,
+                            in about 45 minutes.
                         </p>
+                        <h3 class="technology">Technology</h3>
+                        <p>
+                            The design of the RealWorld Building editor lay in an intersection
+                            between game level editing and computer aided design, neither of which
+                            was an adequate paradigm.
+                        </p>
+                        <p>
+                            Game designers think in terms of meshes, and planes limiting movement.
+                        </p>
+                        <p>
+                            Buildings modeled using traditional CAD tools require extensive training.
+                        </p>
+                        <p>
+                            The middle ground is applying simple 2D CAD to the regular geometry of
+                            most common buildings. For example, since drawing a floor plan is easy, the
+                            floor plan was used to "extrude" building walls into 3D, whence the
+                            structure could be exported to the RealWorld simulation engine.
+                        </p>
+                        <div class="technology">
+                            <p>
+                                C/C++, Lua, OpenFlight, Gamebryo, Qt.
+                            </p>
                         </div>
                     </div>
                 </section>
