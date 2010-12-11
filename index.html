@@ -13,27 +13,26 @@
 
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js">
         </script>
-        <script type="text/javascript" src="http://use.typekit.com/fwp7zth.js">
-        </script>
-        <script type="text/javascript">
-            try {
-            Typekit.load();
-            } catch(e) {
-            }
-        </script>
         <!-- From http://roshanbh.com.np/2008/03/expandable-collapsible-toggle-pane-jquery.html -->
         <script type="text/javascript">
             $(document).ready( function() {
 
-            //hide the all of the elements with class fulldescription
-            $(".fulldescription").hide();
+                //hide the all of the elements with class fulldescription
+                $(".fulldescription").hide();
 
-            //toggle the componenet with class msg_body
-            $(".msg_head").click( function() {
-            $(this).next(".fulldescription").slideToggle(600);
+                //toggle the componenet with class msg_body
+                $(".msg_head").click( function() {
+                    $(this).next(".fulldescription").slideToggle(600);
+                });
             });
-
-            });
+        </script>
+        <script type="text/javascript" src="http://use.typekit.com/fwp7zth.js">
+        </script>
+        <script type="text/javascript">
+            try {
+                Typekit.load();
+            } catch(e) {
+            }
         </script>
     </head>
     <body>
@@ -137,9 +136,14 @@
 
                         <p class="abstract">
                             <strong>Summary:</strong>
-                            <span class="who-benefited">Who benefited?</span>
-                            <span class="why-important">Why was this work important?</span>
-                            <span class="what-results">What were the results?</span>
+                            <span class="who-benefited">Groundwater contamination on the Oak Ridge
+                              Reservation occurs in fractured rock masses, and is difficult to 
+                              accurately characterize for remediation.</span>
+                            <span class="why-important">The probabilistic model developed in this study 
+                              exploits the nature of regularly fractured rocks to allow 
+                              predictive modeling of groundwater flow.</span>
+                            <span class="what-results">The model was successfully verified
+                              numerically. Comparison with field results was good.</span>
                         </p>
                         <ul>
                             <li>
@@ -369,7 +373,27 @@
                     </div>
                 </section>
                 <!------------     -->
-                <h2 class="msg_head">Current projects</h2>
+                <section id="current-projects">
+                    <h2 class="msg_head">Current projects</h2>
+                    <div class="fulldescription">
+
+                        <p>
+                            For most of these projects, the primary deliverable has been either documentation
+                            in terms of conference paper and presentations, peer-reviewed publication, and
+                            running proof-of-concept or prototype software.
+                        </p>
+                        <p>
+                            Going forward, I'm focusing on building business cases for all future projects.
+                        </p>
+                    </div>
+                </section>
+                <footer>
+                    <div style="text-align: center; margin: 10px; font-size: smaller">
+                        <p>
+                            Copyright &copy; 1994-2010 David M. Doolin All Rights Reserved.
+                        </p>
+                    </div>
+                </footer>
             </div>
         </div>
     </body>
