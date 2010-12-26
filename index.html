@@ -63,6 +63,327 @@
                     In the following, each project will be summarized, and the
                     technology explained in detail.
                 </p>
+
+
+                <!------------     -->
+                <section id="current-projects">
+                    <h2 class="msg_head">Current projects</h2>
+                    <div class="fulldescription">
+
+                        <p>
+                            For most of these projects, the primary deliverable has been either documentation
+                            in terms of conference paper and presentations, peer-reviewed publication, and
+                            running proof-of-concept or prototype software.
+                        </p>
+                        <p>
+                            Going forward, I'm focusing on building business cases for all future projects.
+                        </p>
+                    </div>
+                </section>
+
+                <!------------     -->
+                <section id="parametric-building-representation">
+                    <h2 class="msg_head">Parametric building generation</h2>
+                    <div class="fulldescription">
+
+                        <p class="abstract">
+                            <strong>Summary:</strong>
+                            <span class="who-benefited">Users of simulation require
+                                realistic objects for training.</span>
+                            <span class="why-important">Rapidly populating a simulation environment
+                                with objects modeled from the real world helps planning agencies
+                                respond quickly and accurately.</span>
+                            <span class="what-results">The Real World Building Editor went on to
+                                form the basis of Total Immersion's Object Builder, now based
+                                on Google's SketchUp product.</span>
+                        </p>
+                        <h3>Problem space</h3>
+                        <p>
+                            Total Immersion brought me on in March 2006 to help define a
+                            way to simulate real buildings in their RealWorld platform.
+                            Starting from general guidelines, I scoped out requirements,
+                            then designed and built the RealWorld Building Editor. The
+                            goal of this application was to allow an untrained user to
+                            create a model of a real building for use in a simulation,
+                            in about 45 minutes.
+                        </p>
+                        <h3 class="technology">Technology</h3>
+                        <p>
+                            The design of the RealWorld Building editor lay in an intersection
+                            between game level editing and computer aided design, neither of which
+                            was an adequate paradigm.
+                        </p>
+                        <p>
+                            Game designers think in terms of meshes, and planes limiting movement.
+                        </p>
+                        <p>
+                            Buildings modeled using traditional CAD tools require extensive training.
+                        </p>
+                        <p>
+                            The middle ground is applying simple 2D CAD to the regular geometry of
+                            most common buildings. For example, since drawing a floor plan is easy, the
+                            floor plan was used to "extrude" building walls into 3D, whence the
+                            structure could be exported to the RealWorld simulation engine.
+                        </p>
+                        <div class="technology">
+                            <p>
+                                C/C++, Lua, OpenFlight, Gamebryo, Qt.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                
+                               
+                
+                <!------------     -->
+                <section id="mine-monitoring">
+                    <h2 class="msg_head">Mine monitoring sensors</h2>
+                    <div class="fulldescription">
+
+                        <p class="abstract">
+                            <strong>Summary:</strong>
+                            <span class="who-benefited">Sensors can help miners evaluate and monitor
+                                working conditions underground, leading to a safer mine.</span>
+                            <span class="why-important">Since wireless sensors are line-of-site
+                                constrained, establishing a baseline, proof-of-concept implementation
+                                is necessary before committing to industrial production.</span>
+                            <span class="what-results">We found that wireless sensors work quite
+                                well for monitoring temperature, barometric pressure and humidity
+                                in Black Diamond Mine, when appropriate care is taken during
+                                installation to establish line-of-site communication.</span>
+                        </p>
+                        <h3>Problem space</h3>
+                        <p>
+                            Working in an underground mine requires a number of skills beyond
+                            software development. For example, everyone on the project was
+                            required to undergo mine safety briefing. Parts of the mine suffer
+                            from spalling, with occasional rock falls significant enough to
+                            threaten safety.  Mote installation required using a number of
+                            power tools to both fabricate mounts and attached the mounted
+                            mote to mine walls.
+                        </p>
+                        <h3 class="technology">Technology</h3>
+                        <div class="technology">
+                            <p>
+                                Building a sensor mote network in a mine required distributing motes on a line of
+                                site network through the mine.
+                            </p>
+                            <p>
+                                Nesc, C/C++, ARM, Wireless sensors, HTML, CSS, MySQL, PHP, Linux, Google Maps, Tablet computers, Cygwin
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                
+                <!------------     -->
+                <section id="wildfire-sensors">
+                    <h2 class="msg_head">Wildfire sensors</h2>
+                    <div class="fulldescription">
+
+                        <p class="abstract">
+                            <strong>Summary:</strong>
+                            <span class="who-benefited">Who benefited?</span>
+                            <span class="why-important">Why was this work important?</span>
+                            <span class="what-results">What were the results?</span>
+                        </p>
+                        <h3>Problem space</h3>
+                        <h3 class="technology">Technology</h3>
+                        <div class="technology">
+                            <p>
+                                Nesc, C/C++, ARM, Wireless sensors, HTML, CSS, MySQL, PHP, Linux, Google Maps, Tablet computers, Cygwin, GPS
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                
+                
+                <!------------     -->
+                <section id="hub-spoke-search">
+                    <h2 class="msg_head">Hub and spoke search</h2>
+                    <div class="fulldescription">
+
+                        <p class="abstract">
+                            <strong>Summary:</strong>
+                            <span class="who-benefited">Targeted search benefits users by
+                                providing results more relevant to their query.</span>
+                            <span class="why-important">Grouping content providers by
+                                topic helps increase relevancy.</span>
+                            <span class="what-results">In 2001, Infrasearch-based JXTA
+                                technology returned search results
+                                from a major news source database timestamped at 57 seconds
+                                after database insertion.</span>
+                        </p>
+                        <h3>Problem space</h3>
+                        <h3 class="technology">Technology</h3>
+                        <div class="technology">
+                            <p>
+                                Win32, C/C++, Java, HTML, CSS, Linux, Apache, Tomcat, Jetty, Cygwin.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!------------     -->
+                <section id="peer-to-peer">
+                    <h2 class="msg_head">Peer-to-peer networking</h2>
+                    <div class="fulldescription">
+
+                        <p class="abstract">
+                            <strong>Summary:</strong>
+                            <span class="who-benefited">Who benefited?</span>
+                            <span class="why-important">Why was this work important?</span>
+                            <span class="what-results">What were the results?</span>
+                        </p>
+                        <h3>Problem space</h3>
+                        <h3 class="technology">Technology</h3>
+                        <div class="technology">
+                            <p>
+                                Java, C, Win32.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                
+                
+
+
+                <section id="discrete-element-modeling">
+                    <h2 class="msg_head">Discrete element modeling</h2>
+                    <div class="fulldescription">
+
+                        <p class="abstract">
+                            <strong>Summary:</strong>
+                            <span class="who-benefited">Who benefited?</span>
+                            <span class="why-important">Why was this work important?</span>
+                            <span class="what-results">What were the results?</span>
+                        </p>
+                        <h3>Problem space</h3>
+                        <h3 class="technology">Technology</h3>
+                        <div class="technology">
+                            <p>
+                                C/C++, Win32 API, Unit testing, Gnuplot, LaTeX, BLAS/LAPACK, Matlab, Octave, Bash, Cygwin
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+
+                
+                <section id="f2j">
+                    <h2 class="msg_head">Compiling Fortran to Java</h2>
+                    <div class="fulldescription">
+
+                        <p class="abstract">
+                            <strong>Summary:</strong>
+                            <span class="who-benefited">Who benefited?</span>
+                            <span class="why-important">Why was this work important?</span>
+                            <span class="what-results">What were the results?</span>
+                        </p>
+                        <h3>Problem space</h3>
+                        <h3 class="technology">Technology</h3>
+                        <div class="technology">
+                          
+                          <p>
+                            The University of Tennessee hosts the Innovative Computing Laboratory, which 
+                            is a world-class repository of numerical and scientific software. Much of this
+                            software is based on the Basic Linear Algebra Subroutines (BLAS), and the 
+                            Linear Algebra Packages (LAPACK).  Both BLAS and LAPACK are written in Fortran 77.
+                            Using BLAS and LAPACK with other languages requires either having a wrapper
+                            around the driver functions such that the calling program can link, or having 
+                            BLAS and LAPACK as native source.  
+                          </p> 
+                          <p>
+                            The Fortran-to-Java project, started in the Spring of 1997, chose to take the 
+                            BLAS and LAPACK Fortran source directly to Java source code. 
+                          </p>
+                          <p>
+                            At this time, there were no Fortran compilers targeting Java. The <code>f2c</code>
+                            project translated a subset of Fortran 77 to the C programming language. The GNU
+                            <code>f77</code> compiler was a moving target. Thus, we decided design and build 
+                            an in-house compiler, <code>f2j</code>.
+                          </p>
+                          
+                          <p>ICL's <code>f2j</code> is based on the Flex and Bison lexer and parser. While 
+                            Fortran is known to be difficult to lexically analyze, by limiting our scope to 
+                            the BLAS and LAPACK coding standards, we were able to generate an LR1 grammar
+                            and successfully parse the entire code base.
+                          </p>
+                          <p>
+                            Once parsed into an abstract syntax tree, the goto statements in the original 
+                            <span class="program-name">Fortran</span> code were reduced to an appropriate 
+                            combination of <code>break</code> and <code>continue</code> statements in Java. 
+                          </p>
+                          
+                          <p>
+                            Because Java doesn't allow internal access to array elements by pointer, indices
+                            were generated to pass into Fortran routines requiring internal array access.   
+                          </p>
+                          
+                            <p>
+                                Toolchain: C, Flex, Bison, JVM, Jasmin, Javap and the usual assortment of 
+                                Unix utilities and build scripts.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                
+
+                <section id="fracture-flow">
+                    <h2 class="msg_head">Fracture flow modeling</h2>
+                    <div class="fulldescription">
+
+                        <p class="abstract">
+                            <strong>Summary:</strong>
+                            <span class="who-benefited">Groundwater contamination on the Oak Ridge
+                              Reservation occurs in fractured rock masses, and is difficult to 
+                              accurately characterize for remediation.</span>
+                            <span class="why-important">The probabilistic model developed in this study 
+                              exploits the nature of regularly fractured rocks to allow 
+                              predictive modeling of groundwater flow.</span>
+                            <span class="what-results">The model was successfully verified
+                              numerically. Comparison with field results was good.</span>
+                        </p>
+                        <ul>
+                            <li>
+                                Fracture flow:
+
+                                <p>
+                                    "Solid rock" is a misnomer. It doesn't exist.
+                                </p>
+                                <p>
+                                    Nearly all rock is fractured at some scale, and these
+                                    fractures allow fluids such as water and oil to move
+                                    through rock masses.
+                                </p>
+                                <p>
+                                    Because it's easier to see quasars at the edge of the
+                                    universe than it is to see 1 meter beneath our feet,
+                                    understanding how water moves through fractured rock
+                                    requires building and validating mathematical models.
+                                </p>
+                                <p>
+                                    Such models help understand where groundwater is going,
+                                    when it's going to get there, and what it might be carrying
+                                    with it in terms of contaminants.
+                                </p>
+                            </li>
+                        </ul>
+                        <h3>Problem space</h3>
+                        <h3 class="technology">Technology</h3>
+                        <div class="technology">
+                            <p>
+                                C, Matlab.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                
+                
+                
                 <section id="fem">
                     <h2 class="msg_head">Fracture toughness testing</h2>
                     <div class="fulldescription">
@@ -130,301 +451,8 @@
                         </div>
                     </div><!--fulldescription-->
                 </section>
-                <section id="fracture-flow">
-                    <h2 class="msg_head">Fracture flow modeling</h2>
-                    <div class="fulldescription">
-
-                        <p class="abstract">
-                            <strong>Summary:</strong>
-                            <span class="who-benefited">Groundwater contamination on the Oak Ridge
-                              Reservation occurs in fractured rock masses, and is difficult to 
-                              accurately characterize for remediation.</span>
-                            <span class="why-important">The probabilistic model developed in this study 
-                              exploits the nature of regularly fractured rocks to allow 
-                              predictive modeling of groundwater flow.</span>
-                            <span class="what-results">The model was successfully verified
-                              numerically. Comparison with field results was good.</span>
-                        </p>
-                        <ul>
-                            <li>
-                                Fracture flow:
-
-                                <p>
-                                    "Solid rock" is a misnomer. It doesn't exist.
-                                </p>
-                                <p>
-                                    Nearly all rock is fractured at some scale, and these
-                                    fractures allow fluids such as water and oil to move
-                                    through rock masses.
-                                </p>
-                                <p>
-                                    Because it's easier to see quasars at the edge of the
-                                    universe than it is to see 1 meter beneath our feet,
-                                    understanding how water moves through fractured rock
-                                    requires building and validating mathematical models.
-                                </p>
-                                <p>
-                                    Such models help understand where groundwater is going,
-                                    when it's going to get there, and what it might be carrying
-                                    with it in terms of contaminants.
-                                </p>
-                            </li>
-                        </ul>
-                        <h3>Problem space</h3>
-                        <h3 class="technology">Technology</h3>
-                        <div class="technology">
-                            <p>
-                                C, Matlab.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                <section id="f2j">
-                    <h2 class="msg_head">Compiling Fortran to Java</h2>
-                    <div class="fulldescription">
-
-                        <p class="abstract">
-                            <strong>Summary:</strong>
-                            <span class="who-benefited">Who benefited?</span>
-                            <span class="why-important">Why was this work important?</span>
-                            <span class="what-results">What were the results?</span>
-                        </p>
-                        <h3>Problem space</h3>
-                        <h3 class="technology">Technology</h3>
-                        <div class="technology">
-                          
-                          <p>
-                            The University of Tennessee hosts the Innovative Computing Laboratory, which 
-                            is a world-class repository of numerical and scientific software. Much of this
-                            software is based on the Basic Linear Algebra Subroutines (BLAS), and the 
-                            Linear Algebra Packages (LAPACK).  Both BLAS and LAPACK are written in Fortran 77.
-                            Using BLAS and LAPACK with other languages requires either having a wrapper
-                            around the driver functions such that the calling program can link, or having 
-                            BLAS and LAPACK as native source.  
-                          </p> 
-                          <p>
-                            The Fortran-to-Java project, started in the Spring of 1997, chose to take the 
-                            BLAS and LAPACK Fortran source directly to Java source code. 
-                          </p>
-                          <p>
-                            At this time, there were no Fortran compilers targeting Java. The <code>f2c</code>
-                            project translated a subset of Fortran 77 to the C programming language. The GNU
-                            <code>f77</code> compiler was a moving target. Thus, we decided design and build 
-                            an in-house compiler, <code>f2j</code>.
-                          </p>
-                          
-                          <p>ICL's <code>f2j</code> is based on the Flex and Bison lexer and parser. While 
-                            Fortran is known to be difficult to lexically analyze, by limiting our scope to 
-                            the BLAS and LAPACK coding standards, we were able to generate an LR1 grammar
-                            and successfully parse the entire code base.
-                          </p>
-                          <p>
-                            Once parsed into an abstract syntax tree, the goto statements in the original 
-                            <span class="program-name">Fortran</span> code were reduced to an appropriate 
-                            combination of <code>break</code> and <code>continue</code> statements in Java. 
-                          </p>
-                          
-                          <p>
-                            Because Java doesn't allow internal access to array elements by pointer, indices
-                            were generated to pass into Fortran routines requiring internal array access.   
-                          </p>
-                          
-                            <p>
-                                Toolchain: C, Flex, Bison, JVM, Jasmin, Javap and the usual assortment of 
-                                Unix utilities and build scripts.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                <section id="discrete-element-modeling">
-                    <h2 class="msg_head">Discrete element modeling</h2>
-                    <div class="fulldescription">
-
-                        <p class="abstract">
-                            <strong>Summary:</strong>
-                            <span class="who-benefited">Who benefited?</span>
-                            <span class="why-important">Why was this work important?</span>
-                            <span class="what-results">What were the results?</span>
-                        </p>
-                        <h3>Problem space</h3>
-                        <h3 class="technology">Technology</h3>
-                        <div class="technology">
-                            <p>
-                                C/C++, Win32 API, Unit testing, Gnuplot, LaTeX, BLAS/LAPACK, Matlab, Octave, Bash, Cygwin
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                <!------------     -->
-                <section id="hub-spoke-search">
-                    <h2 class="msg_head">Hub and spoke search</h2>
-                    <div class="fulldescription">
-
-                        <p class="abstract">
-                            <strong>Summary:</strong>
-                            <span class="who-benefited">Targeted search benefits users by
-                                providing results more relevant to their query.</span>
-                            <span class="why-important">Grouping content providers by
-                                topic helps increase relevancy.</span>
-                            <span class="what-results">In 2001, Infrasearch-based JXTA
-                                technology returned search results
-                                from a major news source database timestamped at 57 seconds
-                                after database insertion.</span>
-                        </p>
-                        <h3>Problem space</h3>
-                        <h3 class="technology">Technology</h3>
-                        <div class="technology">
-                            <p>
-                                Win32, C/C++, Java, HTML, CSS, Linux, Apache, Tomcat, Jetty, Cygwin.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                <!------------     -->
-                <section id="peer-to-peer">
-                    <h2 class="msg_head">Peer-to-peer networking</h2>
-                    <div class="fulldescription">
-
-                        <p class="abstract">
-                            <strong>Summary:</strong>
-                            <span class="who-benefited">Who benefited?</span>
-                            <span class="why-important">Why was this work important?</span>
-                            <span class="what-results">What were the results?</span>
-                        </p>
-                        <h3>Problem space</h3>
-                        <h3 class="technology">Technology</h3>
-                        <div class="technology">
-                            <p>
-                                Java, C, Win32.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                <!------------     -->
-                <section id="wildfire-sensors">
-                    <h2 class="msg_head">Wildfire sensors</h2>
-                    <div class="fulldescription">
-
-                        <p class="abstract">
-                            <strong>Summary:</strong>
-                            <span class="who-benefited">Who benefited?</span>
-                            <span class="why-important">Why was this work important?</span>
-                            <span class="what-results">What were the results?</span>
-                        </p>
-                        <h3>Problem space</h3>
-                        <h3 class="technology">Technology</h3>
-                        <div class="technology">
-                            <p>
-                                Nesc, C/C++, ARM, Wireless sensors, HTML, CSS, MySQL, PHP, Linux, Google Maps, Tablet computers, Cygwin, GPS
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                <!------------     -->
-                <section id="mine-monitoring">
-                    <h2 class="msg_head">Mine monitoring sensors</h2>
-                    <div class="fulldescription">
-
-                        <p class="abstract">
-                            <strong>Summary:</strong>
-                            <span class="who-benefited">Sensors can help miners evaluate and monitor
-                                working conditions underground, leading to a safer mine.</span>
-                            <span class="why-important">Since wireless sensors are line-of-site
-                                constrained, establishing a baseline, proof-of-concept implementation
-                                is necessary before committing to industrial production.</span>
-                            <span class="what-results">We found that wireless sensors work quite
-                                well for monitoring temperature, barometric pressure and humidity
-                                in Black Diamond Mine, when appropriate care is taken during
-                                installation to establish line-of-site communication.</span>
-                        </p>
-                        <h3>Problem space</h3>
-                        <p>
-                            Working in an underground mine requires a number of skills beyond
-                            software development. For example, everyone on the project was
-                            required to undergo mine safety briefing. Parts of the mine suffer
-                            from spalling, with occasional rock falls significant enough to
-                            threaten safety.  Mote installation required using a number of
-                            power tools to both fabricate mounts and attached the mounted
-                            mote to mine walls.
-                        </p>
-                        <h3 class="technology">Technology</h3>
-                        <div class="technology">
-                            <p>
-                                Building a sensor mote network in a mine required distributing motes on a line of
-                                site network through the mine.
-                            </p>
-                            <p>
-                                Nesc, C/C++, ARM, Wireless sensors, HTML, CSS, MySQL, PHP, Linux, Google Maps, Tablet computers, Cygwin
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                <!------------     -->
-                <section id="parametric-building-representation">
-                    <h2 class="msg_head">Parametric building generation</h2>
-                    <div class="fulldescription">
-
-                        <p class="abstract">
-                            <strong>Summary:</strong>
-                            <span class="who-benefited">Users of simulation require
-                                realistic objects for training.</span>
-                            <span class="why-important">Rapidly populating a simulation environment
-                                with objects modeled from the real world helps planning agencies
-                                respond quickly and accurately.</span>
-                            <span class="what-results">The Real World Building Editor went on to
-                                form the basis of Total Immersion's Object Builder, now based
-                                on Google's SketchUp product.</span>
-                        </p>
-                        <h3>Problem space</h3>
-                        <p>
-                            Total Immersion brought me on in March 2006 to help define a
-                            way to simulate real buildings in their RealWorld platform.
-                            Starting from general guidelines, I scoped out requirements,
-                            then designed and built the RealWorld Building Editor. The
-                            goal of this application was to allow an untrained user to
-                            create a model of a real building for use in a simulation,
-                            in about 45 minutes.
-                        </p>
-                        <h3 class="technology">Technology</h3>
-                        <p>
-                            The design of the RealWorld Building editor lay in an intersection
-                            between game level editing and computer aided design, neither of which
-                            was an adequate paradigm.
-                        </p>
-                        <p>
-                            Game designers think in terms of meshes, and planes limiting movement.
-                        </p>
-                        <p>
-                            Buildings modeled using traditional CAD tools require extensive training.
-                        </p>
-                        <p>
-                            The middle ground is applying simple 2D CAD to the regular geometry of
-                            most common buildings. For example, since drawing a floor plan is easy, the
-                            floor plan was used to "extrude" building walls into 3D, whence the
-                            structure could be exported to the RealWorld simulation engine.
-                        </p>
-                        <div class="technology">
-                            <p>
-                                C/C++, Lua, OpenFlight, Gamebryo, Qt.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                <!------------     -->
-                <section id="current-projects">
-                    <h2 class="msg_head">Current projects</h2>
-                    <div class="fulldescription">
-
-                        <p>
-                            For most of these projects, the primary deliverable has been either documentation
-                            in terms of conference paper and presentations, peer-reviewed publication, and
-                            running proof-of-concept or prototype software.
-                        </p>
-                        <p>
-                            Going forward, I'm focusing on building business cases for all future projects.
-                        </p>
-                    </div>
-                </section>
+                
+                
                 <footer>
                     <div style="text-align: center; margin: 10px; font-size: smaller">
                         <p>
