@@ -192,8 +192,46 @@
                         <h3>Problem space</h3>
                         <h3 class="technology">Technology</h3>
                         <div class="technology">
+                          
+                          <p>
+                            The University of Tennessee hosts the Innovative Computing Laboratory, which 
+                            is a world-class repository of numerical and scientific software. Much of this
+                            software is based on the Basic Linear Algebra Subroutines (BLAS), and the 
+                            Linear Algebra Packages (LAPACK).  Both BLAS and LAPACK are written in Fortran 77.
+                            Using BLAS and LAPACK with other languages requires either having a wrapper
+                            around the driver functions such that the calling program can link, or having 
+                            BLAS and LAPACK as native source.  
+                          </p> 
+                          <p>
+                            The Fortran-to-Java project, started in the Spring of 1997, chose to take the 
+                            BLAS and LAPACK Fortran source directly to Java source code. 
+                          </p>
+                          <p>
+                            At this time, there were no Fortran compilers targeting Java. The <code>f2c</code>
+                            project translated a subset of Fortran 77 to the C programming language. The GNU
+                            <code>f77</code> compiler was a moving target. Thus, we decided design and build 
+                            an in-house compiler, <code>f2j</code>.
+                          </p>
+                          
+                          <p>ICL's <code>f2j</code> is based on the Flex and Bison lexer and parser. While 
+                            Fortran is known to be difficult to lexically analyze, by limiting our scope to 
+                            the BLAS and LAPACK coding standards, we were able to generate an LR1 grammar
+                            and successfully parse the entire code base.
+                          </p>
+                          <p>
+                            Once parsed into an abstract syntax tree, the goto statements in the original 
+                            <span class="program-name">Fortran</span> code were reduced to an appropriate 
+                            combination of <code>break</code> and <code>continue</code> statements in Java. 
+                          </p>
+                          
+                          <p>
+                            Because Java doesn't allow internal access to array elements by pointer, indices
+                            were generated to pass into Fortran routines requiring internal array access.   
+                          </p>
+                          
                             <p>
-                                C, Flex, Bison.
+                                Toolchain: C, Flex, Bison, JVM, Jasmin, Javap and the usual assortment of 
+                                Unix utilities and build scripts.
                             </p>
                         </div>
                     </div>
