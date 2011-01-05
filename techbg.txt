@@ -1,0 +1,93 @@
+I'm open to a variety of opportunities for the
+future.  My main criteria are:
+
+* Clear business value to the employer... and
+to the employer's customer.
+
+* Tightly defined scope, even if it's
+applied research.  The best position would
+have me in to help define that scope. I'm
+good at that, and have references backing
+me up.
+
+* Easily explainable to my future clients,
+customers, employers, recruiters, etc.
+Elevator pitchable.  Fuzzy wuzzy, I don't
+have time for fuzzy wuzzy anymore.
+
+~~~~
+
+I understand lab and field environments.
+How stuff actually works in the real world,
+when it's raining, and there's no coffee.
+Why wireless sensors don't work in the
+desert when the wind is blowing (piezoelectric
+effects from saltating sand). Etc.
+
+~~~~
+
+I've written around 400,000 words over the
+last two years spread over a half dozen blogs.
+Mostly on blogging and WordPress, some coding,
+productivity, odds and ends. I can write. I'd
+prefer telling -or teaching - other people what and
+how to write than having to write myself.
+
+~~~~
+
+I have about a half dozen unfinished academic
+pubs in queue.  These would very likely pass
+peer review, but the academic publication process
+is very time consuming.  As is the research,
+which has to be 1. novel, 2. precise, and 3. accurate.
+Very time consuming.
+
+~~~~
+
+I'm definitely interested in having guidance on
+how best to present the work I've done in the past,
+some of which is hosted at http://code.daviddoolin.com/
+BTW, this site is a static web site running from github,
+and updated from the repository using git:
+https://github.com/doolin/doolin.github.com
+
+~~~~
+
+A few more factoids:
+
+* CVS user since 1997, including
+setting up a personal repository.
+
+* svn user since 2005.
+
+* git since 2010
+
+* Debian linux off and on since rex, which
+would be 1996.
+
+* First web page went up in Aug. 1994.
+On wayback machine from 1996.
+
+* Self-taught in c programming. Self-taught
+in test-driven development in c.  Have built
+my own small unit test framework c, object
+frameworks in c.  Written c code generators
+in bash and lua.  If someone were to accuse me
+of reinventing c++, poorly(!), I'd have to agree.
+
+* Familiar with lex/yacc/flex/bison for LR(1)
+rd parsing. Wrote a Fortran lexer to exploit
+LR(1).  We managed to break the JVM on
+this project with our output, their bug not ours.
+
+* Familiar with gdb and valgrind which I use
+when I'm developing c libraries.
+
+* Comfortable using Mac, Linux, Windows,
+Unixen of various flavors.  I prefer not-windows,
+but as long as I can run cygwin, I'm fine.
+
+* There's more, this is just what's off the top
+of my head.
+
+
