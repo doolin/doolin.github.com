@@ -1,6 +1,7 @@
 
 body {
   font-size: 12pt;
+  color:#777;
 }
 
 
@@ -10,7 +11,7 @@ body {
 
 h1,h2,h3 {
    font-family: "neuropol-x-light-1","neuropol-x-light-2";
-	color: #aaa;
+	color: #555;
 }
 
 /* 
@@ -38,7 +39,7 @@ h3.technology {
 }
 
 div.technology {
-  color: #000;
+  color: #aaa;
 }
 
 p {
@@ -47,7 +48,7 @@ p {
 
 
 
-
+/*
 span.who-benefited {
   color: #000;
 }
@@ -60,4 +61,4 @@ span.why-important {
 span.what-results {
   color: #000;
 }
-
+*/
