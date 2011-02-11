@@ -13,14 +13,24 @@ h1,h2,h3 {
 	color: #aaa;
 }
 
+/* 
 h2 {
   text-decoration: underline;
   cursor: pointer;
   cursor: hand;
 }
+*/
+
 
 h3 {
   font-variant: small-caps;
+}
+
+h3.problem_space {
+  font-variant: small-caps;
+  text-decoration: underline;
+  cursor: pointer;
+  cursor: hand;
 }
 
 h3.technology {
