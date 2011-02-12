@@ -1,0 +1,92 @@
+                <section id="discrete-element-modeling">
+                    <h2 class="msg_head">Discrete element modeling</h2>
+
+                        <p class="abstract">
+                            <strong>Summary:</strong>
+                            <span class="who-benefited">Discontinuous deformation analysis, a
+                              discrete element method, provided engineers working with fractured rocks
+                              masses an MS Windows application for better understanding the 
+                              nature of the engineering problem,</span>
+                            <span class="why-important">leading to safer, more reliable design.</span>
+                            <span class="what-results">This application extended earlier work to 
+                              provide an easy-to-use CAD system for modeling fractured rock masses, 
+                              and extended mathematical model to incorporate rock bolts.</span>
+                        </p>
+                        <h3 class="problem_space" title="Click for more...">Problem space</h3>
+                        
+                    <div class="fulldescription">
+                        <p>
+                          Succinctly, you can't put a landslide in a laboratory, but you can put
+                          a landslide in a computer.
+                        </p>
+                        <p>
+                          Simulating the motion of large rock masses is an interesting and difficult 
+                          problem. As stated, the scale of the is far too large for laboratory investigation,
+                          but it's not always clear how best to simulate motion mathematically.  The problem
+                          being that 1. rock masses such as mountains and landslides contain fractures, 
+                          2. the properties of the mass often vary in different directions, and 3. the 
+                          properties of the mass are often different in different places. Sort of like a 
+                          fruit cake, where sometimes you have cake, and sometimes you have not-cake.
+                        </p>
+                        <p>
+                          Variability in direction and location can be handled mathematically without too 
+                          much trouble.  Fractures add a lot more complexity, because rock on each side of 
+                          the fracture may move independently, and the interaction across the fracture is 
+                          discontinuous in time as well as space. These discontinuities render finite element
+                          models inapplicable, as finite elements are based on continuous media.
+                        </p>
+                        <p>
+                          Thus, discrete element modeling.  Each element - rock block - is free to move 
+                          independently, interacting with each other across fracture boundaries.  The tool 
+                          used in this project was an MS Windows implementation of discontinuous deformation analysis.
+                        </p>
+                        <p>
+                          The difference between discontinuous deformation analysis and the 
+                          particle mechanics that you might see in video games is crucial: <em>discontinuous
+                          deformation analysis is based on the physics of rock blocks and rock block interaction</em>.
+                        </p>
+                        <p>
+                            Simulations in video game engines may look real (and may result in being very close 
+                            to real behavior), but physics-based systems are <em>necessary</em> for engineering practice.
+                        </p>
+                        
+                        <h3 class="technology">Technology</h3>
+                        <div class="technology">
+                        	
+                        <p>The Discontinuous Deformation Analysis numerical kernel consists of several thousand
+                        	lines of terse C code, which in the nature of all such applications, prefers to use
+                        	as much RAM as possible. This makes sense for these kinds of problems. 
+                        	</p>
+                        	<p>However, a critical aspect of maintaining the physical viability of a discrete 
+                        		element simulation require at least intermittent monitoring of the particle
+                        		system during the time marching. That is, watching an analysis proceed on
+                        		the computer screen can help ensure the results are useful.  While visual
+                        		inspection can't prove an analysis is correct, it can instantly determine
+                        		when an analysis is grossly incorrect, which is very difficult to algorithmically.
+                        		</p>
+                        		
+                        	<p>Since most practical engineering analysis is conducted on desktop-based MS Windows 
+                        		computers,	the numerical kernel was wrapped with a thin layer to transmit data 
+                        		to MS Windows, and analysis commands to the kernel.
+                        	</p>
+                        		
+                            <p>To facilitate data modeling, DDAML, an XML-derived markup language was defined and 
+                            	implemented. The self-describing, forward- and backward-compatible aspects of XML-derived
+                            	markup allowed continuous feature development of the Windows-based application, without 
+                            	having to keep existing (and well-proven) test cases up to date.
+                            </p>
+                        	
+                        	
+                        	
+                        <h3 class="toolchain">Toolchain</h3>
+                            <p class="buzzwords">
+                                C/C++, Win32 API, Unit testing, Gnuplot, LaTeX, BLAS/LAPACK, Matlab, Octave, 
+                                Bash, Cygwin, XML, DDAML
+                            </p>
+                            
+                            <p>More project details and <a href="http://sourceforge.net/projects/dda/">Discontinuous 
+                            	Deformation Analysis source code</a> available at Sourceforge.
+                            	</p>
+                        </div>
+                    </div>
+                </section>

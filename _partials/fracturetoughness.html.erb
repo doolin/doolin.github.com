@@ -1,0 +1,73 @@
+                <section id="fem">
+                    <h2 class="msg_head">Fracture toughness testing</h2>
+
+                        <p class="abstract">
+                            <strong>Summary:</strong>
+                            <span class="who-benefited">As part of an ongoing environmental
+                                study at Oak Ridge National Laboratory, </span>
+                            <span class="why-important">limestone and sandstone specimens
+                                with known fracture toughness were
+                                fractured using the Modified Ring Test.</span>
+                            <span class="what-results">Testing results indicated the Modified
+                                Ring Test measured toughness appropriately and could be
+                                used on rocks outcropping on the Oak Ridge Reservation.</span>
+                        </p>
+                        <h3 class="problem_space" title="Click for more...">Problem space</h3>
+                    <div class="fulldescription">
+                        <p>
+                            Measuring the resistance or propensity of a rock to
+                            fracture has important real world application. Rock
+                            is the basis for most industrial activity.  We mine it
+                            and we crush it with gross mechanical systems.  Large
+                            drills. Tons of explosives. Huge metal crushing machines.
+                        </p>
+                        <p>
+                            Everything about rock is energy inefficient. Because we
+                            as an industrial society use so much rock, even small
+                            fractions of 1% energy improvement can save a lot of
+                            money.
+                        </p>
+                        <p>
+                            One common measure is <em>fracture toughness</em>, which
+                            can be thought of as a sort of brittleness index distinct
+                            from hardness.  For example, cast iron is quite hard, but
+                            brittle, while many steels are softer, but much tougher.
+                        </p>
+                        <p>
+                            In this project, Indiana limestone gathering from a quarry
+                            south of Bloomington, Indiana was cored into specimens for
+                            Modified Ring Testing.
+                        </p>
+                        <div style="float: right;" class="span-8 last">
+                            <img src="images/mrt_mesh_deformed.png" title="Deformed finite element mesh for modified ring test specimen." />
+                        </div>
+
+                        <h3 class="technology">Technology</h3>
+                        <div class="technology">
+                            <p>
+                                The geometry processing for quarter-ring cross-sections
+                                of the ring specimens was computed using an RPL program on an HP48-SX scientific calculator. The
+                                initial parameters were extracted on a Sun4 workstation, loaded to the calculator
+                                using Kermit protocol, the geometries calculated, then downloaded into the
+                                Macintosh computer running the Cornell FRANC2D code.
+                            </p>
+                            <p>
+                                Later, these analyses were ported to
+                                <a href="http://www.simulia.com/products/abaqus_fea.html">Abaqus</a>
+                                running on <a href="http://en.wikipedia.org/wiki/SPARCstation_20">Sparc 20 workstations</a>.
+                            </p>
+                            <p>
+                                Other tools included shell scripting with tsch, awk, sed and the usual
+                                assortment of Unix tools appropriate to the task.
+                            </p>
+                            <p>
+                                Output was plotted to jgraph.
+                            </p>
+                        <h3 class="toolchain">Toolchain</h3>
+                            <p class="buzzwords">
+                              Toolchain: Sun4, Kermit, HP48, FRANC2D, JGraph, MTS fracture testing machine, machine tools
+                              such as rock saw, drill press, etc. 
+                            </p>
+                        </div>
+                    </div>
+                </section>
