@@ -1,56 +1,52 @@
-               <section id="parametric-building-representation">
-                    <h2 class="msg_head">Parametric building generation</h2>
+<section id="parametric-building-representation">
+    <h2 class="msg_head">Parametric building generation</h2>
+    <p class="abstract">
+        <strong>Summary:</strong>
+        <span class="who-benefited">Users of simulation require
+            realistic objects for training.</span>
+        <span class="why-important">Rapidly populating a simulation environment
+            with objects modeled from the real world helps planning agencies
+            respond quickly and accurately.</span>
+        <span class="what-results">The Real World Building Editor went on to
+            form the basis of Total Immersion's Object Builder, now based
+            on Google's SketchUp product.</span>
+    </p>
+    <h3 class="problem_space" title="Click for more..."><%= problem_title %></h3>
+    <div class="fulldescription">
 
-                        <p class="abstract">
-                            <strong>Summary:</strong>
-                            <span class="who-benefited">Users of simulation require
-                                realistic objects for training.</span>
-                            <span class="why-important">Rapidly populating a simulation environment
-                                with objects modeled from the real world helps planning agencies
-                                respond quickly and accurately.</span>
-                            <span class="what-results">The Real World Building Editor went on to
-                                form the basis of Total Immersion's Object Builder, now based
-                                on Google's SketchUp product.</span>
-                        </p>
-                        <h3 class="problem_space" title="Click for more...">Problem space</h3>
+        <p>
+            Total Immersion brought me on in March 2006 to help define a
+            way to simulate real buildings in their RealWorld platform.
+            Starting from general guidelines, I scoped out requirements,
+            then designed and built the RealWorld Building Editor. The
+            goal of this application was to allow an untrained user to
+            create a model of a real building for use in a simulation,
+            in about 45 minutes.
+        </p>
+        <h3 class="technology">Technology</h3>
+        <div class="technology">
+            <p>
+                The design of the RealWorld Building editor lay in an intersection
+                between game level editing and computer aided design, neither of which
+                was an adequate paradigm.
+            </p>
+            <p>
+                Game designers think in terms of meshes, and planes limiting movement.
+            </p>
+            <p>
+                Buildings modeled using traditional CAD tools require extensive training.
+            </p>
+            <p>
+                The middle ground is applying simple 2D CAD to the regular geometry of
+                most common buildings. For example, since drawing a floor plan is easy, the
+                floor plan was used to "extrude" building walls into 3D, whence the
+                structure could be exported to the RealWorld simulation engine.
+            </p>
+            <h3 class="toolchain">Toolchain</h3>
+            <p class="buzzwords">
+                GCC, MS Studio, C/C++, Lua, OpenFlight, Gamebryo, Qt, EXPRESS, IFC.
+            </p>
+        </div>
+    </div>
+</section>
 
-                    <div class="fulldescription">
-                        
-                        
-                        <p>
-                            Total Immersion brought me on in March 2006 to help define a
-                            way to simulate real buildings in their RealWorld platform.
-                            Starting from general guidelines, I scoped out requirements,
-                            then designed and built the RealWorld Building Editor. The
-                            goal of this application was to allow an untrained user to
-                            create a model of a real building for use in a simulation,
-                            in about 45 minutes.
-                        </p>
-                        <h3 class="technology">Technology</h3>
-                        <div class="technology">
-                        <p>
-                            The design of the RealWorld Building editor lay in an intersection
-                            between game level editing and computer aided design, neither of which
-                            was an adequate paradigm.
-                        </p>
-                        <p>
-                            Game designers think in terms of meshes, and planes limiting movement.
-                        </p>
-                        <p>
-                            Buildings modeled using traditional CAD tools require extensive training.
-                        </p>
-                        <p>
-                            The middle ground is applying simple 2D CAD to the regular geometry of
-                            most common buildings. For example, since drawing a floor plan is easy, the
-                            floor plan was used to "extrude" building walls into 3D, whence the
-                            structure could be exported to the RealWorld simulation engine.
-                        </p>
-                        
-                        <h3 class="toolchain">Toolchain</h3>
-                            <p class="buzzwords">
-                                GCC, MS Studio, C/C++, Lua, OpenFlight, Gamebryo, Qt, EXPRESS, IFC.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                

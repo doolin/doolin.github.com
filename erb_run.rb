@@ -6,7 +6,13 @@
 require "erb"
 
 
+
 class QuickTemplate
+
+   def problem_title
+     "Problem space"
+   end
+
    attr_reader :args, :text
    def initialize(file)
       @text = File.read(file)
