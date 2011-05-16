@@ -31,7 +31,7 @@ h3.problem_space {
   font-variant: small-caps;
   text-decoration: underline;
   cursor: pointer;
-  cursor: hand;
+  /* cursor: hand; */
 }
 
 h3.technology {
