@@ -7,12 +7,12 @@ namespace :code do
   task :clean do
     system "rm -fR _site *~"
   end
-  
+
   desc 'Run the jekyll dev server'
   task :server do
     system "jekyll --server --auto"
   end
-  
+
   desc 'Build the pages.'
   task :compile do
     system "./erb_run.rb index.html.erb > index.html"
@@ -22,7 +22,7 @@ end
 
 
 
-namespace :compass do  
+namespace :compass do
 
   desc 'Delete temporary compass files'
   task :clean do
@@ -38,5 +38,5 @@ namespace :compass do
   task :compile => [:clean] do
     system "compass compile"
   end
-  
+
 end
