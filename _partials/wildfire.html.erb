@@ -15,18 +15,37 @@
     </p>
 
     <h3 class="problem_space" title="Click for more..."><%= problem_title %></h3>
-    
-    
-    
-    
+
+
     <div class="fulldescription">
+
+          <p>Deploying sensors for wildfire monitoring requires immediately
+          confronting the issue of sensor survival. That is, the sensors must
+          have enough exposure to environmental conditions to accurately measure
+          those conditions, yet the environment may destroy the sensor. Given
+          relativaly low cost sensors, protecting the sensors would have increased
+          the cost without clear benefits.</p>
+
         <h3 class="technology">Technology</h3>
         <div class="technology">
+
+          <p>The main sensing unit is composed of a TinyOS-based Crossbow mote,
+          with a "Fireboard" attached. The Fireboard consists of an Analog
+          Devices ADXL202JE accelarometer, an Sensirion
+          SHT11 combined temperature and humidity sensor, an Intersema 5534AP
+          combined barometric pressure and temperature sensor a Taos 250RD light
+          sensor, and a LeadTek 9546 GPS unit.</p>
+
+          <p>The Fireboard was programmed using the Nesc language, which compiles to a
+          runtime appropriate for the AVR-based cpu on the mote. The application has
+          the ability to control which sensors are working at a given time, and
+          separates the data collection from the senors driver such that changes in
+          the data collection are supportable without changing lower level driver code.</p>
 
             <h3 class="toolchain">Toolchain</h3>
             <p class="buzzwords">
                 Nesc, C/C++, ARM, Wireless sensors, HTML, CSS, MySQL, PHP, Linux,
-                Google Maps, Tablet computers, Cygwin, GPS
+                Google Maps, Tablet computers, Cygwin, GPS, TinyOS, Crossbow
             </p>
         </div>
     </div>
