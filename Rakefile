@@ -1,42 +1,25 @@
+require_relative 'erb_run'
+
+task default: 'code:build'
 
 namespace :code do
-
-  targetdir = "site"
-
-  desc 'Delete generated _site files'
+  desc 'Delete generated Jekyll files'
   task :clean do
-    system "rm -fR _site *~"
+    sh 'bundle', 'exec', 'jekyll', 'clean'
   end
 
   desc 'Run the jekyll dev server'
-  task :server do
-    system "jekyll --server --auto"
+  task server: :compile do
+    sh 'bundle', 'exec', 'jekyll', 'serve'
   end
 
-  desc 'Build the pages.'
+  desc 'Render the ERB templates to index.html'
   task :compile do
-    system "./erb_run.rb index.html.erb > index.html"
+    File.write('index.html', "#{erb('index.html.erb')}\n")
   end
 
-end
-
-
-
-namespace :compass do
-
-  desc 'Delete temporary compass files'
-  task :clean do
-    system "rm -fR css/*"
+  desc 'Render the templates and build the site in _site'
+  task build: :compile do
+    sh 'bundle', 'exec', 'jekyll', 'build'
   end
-
-  desc 'Run the compass watch script'
-  task :watch do
-    system "compass watch"
-  end
-
-  desc 'Compile sass scripts'
-  task :compile => [:clean] do
-    system "compass compile"
-  end
-
 end

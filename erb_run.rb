@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 # Quick and dirty template processing script. It takes
 # as an argument the name of the first template script
 # and then executes it to standard output.
@@ -19,7 +19,7 @@ class QuickTemplate
    end
    def exec(args={})
       b = binding
-      template = ERB.new(@text, 0, "%<>")
+      template = ERB.new(@text, trim_mode: "%<>")
       result = template.result(b)
       # Chomp the trailing newline
       result.gsub(/\n$/,'')
@@ -30,6 +30,4 @@ def erb(file, args={})
    QuickTemplate.new(file).exec(args)
 end
 
-puts erb(ARGV[0])
-
-
+puts erb(ARGV.fetch(0)) if File.expand_path($PROGRAM_NAME) == File.expand_path(__FILE__)
