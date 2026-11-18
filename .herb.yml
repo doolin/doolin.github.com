@@ -1,0 +1,9 @@
+framework: ruby
+
+files:
+  exclude:
+    # Generated: rake code:compile writes index.html, Jekyll writes _site.
+    - "index.html"
+    - "_site/**/*"
+    - "node_modules/**/*"
+    - "vendor/**/*"
