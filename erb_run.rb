@@ -3,7 +3,8 @@
 # as an argument the name of the first template script
 # and then executes it to standard output.
 
-require "erb"
+require "herb"
+require "herb/engine"
 
 
 
@@ -15,12 +16,13 @@ class QuickTemplate
 
    attr_reader :args, :text
    def initialize(file)
+      @file = file
       @text = File.read(file)
    end
    def exec(args={})
       b = binding
-      template = ERB.new(@text, trim_mode: "%<>")
-      result = template.result(b)
+      src = Herb::Engine.new(@text, filename: @file).src
+      result = b.eval(src, @file)
       # Chomp the trailing newline
       result.gsub(/\n$/,'')
    end
