@@ -1,27 +1,16 @@
-
 body {
   font-size: 12pt;
-  color:#777;
+  color: #777;
 }
-
 
 .container {
-	width: 630px;
+  width: 630px;
 }
 
-h1,h2,h3,h4 {
-   font-family: "neuropol-x-light-1","neuropol-x-light-2";
-	color: #555;
+h1, h2, h3, h4 {
+  font-family: "neuropol-x-light-1", "neuropol-x-light-2";
+  color: #555;
 }
-
-/* 
-h2 {
-  text-decoration: underline;
-  cursor: pointer;
-  cursor: hand;
-}
-*/
-
 
 h3 {
   font-variant: small-caps;
@@ -31,48 +20,19 @@ h3.problem_space {
   font-variant: small-caps;
   text-decoration: underline;
   cursor: pointer;
-  /* cursor: hand; */
-}
-
-h3.technology {
-  
-}
-
-div.technology {
-/*  color: #aaa; */
 }
 
 p {
-	padding-left: 2em;
+  padding-left: 2em;
 }
 
 div.doolin {
   position: fixed;
-  bottom: 5px; 
+  bottom: 5px;
   right: 5px;
 }
-
 
 .shamrock {
   color: #008000;
   font-size: 110%;
 }
-
-
-
-/*
-span.who-benefited {
-  color: #a00;
-}
-
-
-span.why-important {
-  color: #0a0;
-}
-
-span.what-results {
-  color: #00a;
-}
-*/
-
-
