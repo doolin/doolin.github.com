@@ -1,5 +1,7 @@
-// Each project's details start collapsed; clicking its "Problem space"
-// heading slides them open or closed. Without JavaScript they stay open.
+// Each project's details start collapsed (css/style.css hides them once
+// the inline script in <head> marks the page "js"); clicking its "Problem
+// space" heading slides them open or closed. Without JavaScript they stay
+// open.
 const SLIDE_MS = 600;
 // Sine ease-in-out: the curve of jQuery's default "swing" easing.
 const SLIDE_EASING = "cubic-bezier(0.37, 0, 0.63, 1)";
@@ -32,10 +34,6 @@ function slideToggle(details) {
     details.style.overflow = "";
     details.style.display = opening ? "block" : "none";
   };
-}
-
-for (const details of document.querySelectorAll(".fulldescription")) {
-  details.style.display = "none";
 }
 
 for (const heading of document.querySelectorAll(".problem_space")) {
