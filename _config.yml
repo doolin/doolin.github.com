@@ -9,7 +9,5 @@ exclude:
   - erb_run.rb
   - index.html.erb
   - techbg.txt
-  - package.json
-  - bun.lock
   - node_modules
   - vendor
