@@ -27,5 +27,6 @@ template, run `bundle exec rake code:compile` in another terminal; Jekyll will
 pick up the updated HTML. CSS changes are picked up automatically.
 
 Commit the regenerated `index.html` with template changes so the static page
-stays current. Run `bundle exec rake code:clean` to remove Jekyll's generated
+stays current; `bundle exec rake code:verify` fails if it is out of date.
+Run `bundle exec rake code:clean` to remove Jekyll's generated
 site and caches.

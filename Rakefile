@@ -2,6 +2,10 @@ require_relative 'erb_run'
 
 task default: 'code:build'
 
+def rendered_index
+  "#{erb('index.html.erb')}\n"
+end
+
 namespace :code do
   desc 'Delete generated Jekyll files'
   task :clean do
@@ -15,7 +19,14 @@ namespace :code do
 
   desc 'Render the ERB templates to index.html'
   task :compile do
-    File.write('index.html', "#{erb('index.html.erb')}\n")
+    File.write('index.html', rendered_index)
+  end
+
+  desc 'Fail if index.html is out of date with its templates'
+  task :verify do
+    next if File.read('index.html') == rendered_index
+
+    abort 'index.html is out of date; run bundle exec rake code:compile'
   end
 
   desc 'Render the templates and build the site in _site'
